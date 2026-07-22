@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - 1-Wire Smart Home Controller</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 22px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        strong {
+            color: #222;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 30px 0;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+        }
+        .compliance-list {
+            padding-left: 20px;
+        }
+        .compliance-list li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p class="last-updated"><strong>Last updated:</strong> July 22, 2026</p>
+
+    <p>This Privacy Policy describes how <strong>1-Wire Smart Home Controller</strong> ("the App") developed by <strong>Aleksandr Demidov</strong> handles your information.</p>
+
+    <h2>Important: We Do Not Collect Your Personal Information</h2>
+    <p><strong>This App does not collect, store, or transmit any personal information, user data, or device data to us or any third party.</strong></p>
+    <p>The App operates entirely on your <strong>local WiFi network</strong> and communicates only with your 1-Wire smart home controllers. All data remains exclusively on your own devices and local network.</p>
+
+    <h2>What This App Does</h2>
+    <p>The App allows you to:</p>
+    <ul>
+        <li>Discover and connect to 1-Wire controllers on your local network (<code>ow-XXXXXX.local</code>)</li>
+        <li>View real-time sensor data (temperature, voltage, digital states) from your own devices</li>
+        <li>Control relays and actuators connected to your controllers</li>
+        <li>Configure automation rules (schedules, thermostats, astro mode)</li>
+        <li>Update controller firmware</li>
+    </ul>
+
+    <p><strong>Important: Controllers operate fully offline.</strong> Your smart home controller will continue to function with all configured automation, sensor monitoring, and relay control <strong>without an internet connection</strong>. All automation rules (time-based schedules, thermostat settings, astro mode, etc.) run locally on the controller device itself.</p>
+
+    <h2>Current 1-Wire Controller Supports Chips:</h2>
+    <ul>
+        <li><strong>DS18B20</strong> (a temperature sensor)</li>
+        <li><strong>DS2413A</strong> (2 channels of sensors or relays)</li>
+        <li><strong>DS2408</strong> (8 channels of sensors or relays)</li>
+        <li><strong>DS2438Z</strong> (thermocouple and voltmeter or ammeter)</li>
+    </ul>
+
+    <h2>Data That Stays On Your Local Network</h2>
+    <p>When you use the App, the following data exists <strong>only on your local network</strong> between your mobile device and your controllers:</p>
+    <ul>
+        <li><strong>Controller identifiers</strong> (device serial numbers, local hostnames)</li>
+        <li><strong>Sensor readings</strong> (temperature, voltage, switch states from your own sensors)</li>
+        <li><strong>Relay/actuator states</strong> (on/off status of your connected devices)</li>
+        <li><strong>Control commands</strong> (your instructions to turn devices on/off)</li>
+        <li><strong>Configuration data</strong> (your saved settings for automation and control)</li>
+        <li><strong>Network communication</strong> (WebSocket, UDP port 7777, MQTT topics if configured)</li>
+    </ul>
+    <p><strong>None of this data is sent to us, stored on our servers, or shared with any third party.</strong></p>
+
+    <h2>Limited Technical Information</h2>
+    <p>The App may collect <strong>non-personal, anonymous</strong> technical information solely for the purpose of improving the App:</p>
+    <ul>
+        <li><strong>App version and device type</strong> (to ensure compatibility)</li>
+        <li><strong>Crash reports</strong> (anonymous error logs to fix bugs)</li>
+        <li><strong>Feature usage statistics</strong> (aggregated, non-identifiable data about which features are used)</li>
+    </ul>
+    <p>This anonymous data contains <strong>no personal identifiers, no IP addresses, no user accounts, and no smart home data</strong>.</p>
+
+    <h2>No Account Required</h2>
+    <ul>
+        <li>The App does <strong>not</strong> require you to create an account</li>
+        <li>The App does <strong>not</strong> require you to sign in with Google, Facebook, or any other service</li>
+        <li>The App does <strong>not</strong> access your contacts, photos, location (except for astro mode calculations if you choose to enable it), or any other personal data on your mobile device</li>
+    </ul>
+
+    <h2>WiFi Network Credentials</h2>
+    <p>When you configure a controller to connect to your WiFi network:</p>
+    <ul>
+        <li>Credentials are entered <strong>directly into the controller's web interface</strong></li>
+        <li>They are <strong>stored only on the controller device itself</strong></li>
+        <li>We <strong>never</strong> see, store, or transmit your WiFi password</li>
+        <li>We <strong>never</strong> access your WiFi network remotely</li>
+    </ul>
+
+    <h2>Optional Location Data (Astro Mode)</h2>
+    <p>If you choose to use <strong>astro mode</strong> (sunrise/sunset automation):</p>
+    <ul>
+        <li>You may enter <strong>geographical coordinates</strong> for your location</li>
+        <li>These coordinates are <strong>stored only on your controller</strong></li>
+        <li>They are used <strong>solely for astronomical calculations</strong> (sunrise/sunset times)</li>
+        <li>We do <strong>not</strong> collect or store this information</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+
+    <h3>MQTT Integration (Optional)</h3>
+    <p>If you configure MQTT integration:</p>
+    <ul>
+        <li>Your controller will connect to <strong>your chosen MQTT broker</strong></li>
+        <li>We do <strong>not</strong> operate, control, or access any MQTT brokers</li>
+        <li>Data shared with MQTT brokers is governed by <strong>your broker's privacy policy</strong></li>
+    </ul>
+
+    <h3>Open Source Components</h3>
+    <p>The App may use open source libraries that have their own licenses. We will disclose any components that collect data.</p>
+
+    <h2>Data Security</h2>
+    <p>Since all data remains on your local network:</p>
+    <ul>
+        <li><strong>Your WiFi network security protects your data</strong> (use WPA2/WPA3 encryption)</li>
+        <li><strong>Your router's firewall prevents external access</strong></li>
+        <li><strong>No data leaves your local network</strong> unless you explicitly configure external integrations (MQTT, OpenHab, etc.)</li>
+    </ul>
+
+    <h2>Your Rights</h2>
+    <p>Since we do not collect your personal information:</p>
+    <ul>
+        <li>There is <strong>no personal data to access, correct, or delete</strong></li>
+        <li>You have <strong>full control</strong> over all data on your own devices and network</li>
+        <li>You can <strong>factory reset</strong> your controllers at any time to remove all stored data</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>The App is <strong>not intended for use by children under 13</strong> (or under 16 in the EU). We do not knowingly collect any information from children.</p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy if our data practices change. We will notify you by updating the "Last updated" date and posting the new policy in the App.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us:</p>
+    <p><strong>Email:</strong> alex.m.demidoff@gmail.com<br>
+       <strong>Developer:</strong> Aleksandr Demidov<br>
+       <strong>App Name:</strong> 1-Wire Smart Home Controller<br>
+       <strong>Product Website:</strong> <a href="https://home.1vp.ru/en/1-wire-controller/">https://home.1vp.ru/en/1-wire-controller/</a></p>
+</body>
+</html>
